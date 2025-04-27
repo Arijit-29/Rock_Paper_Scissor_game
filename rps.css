@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+}
+.buttons{
+height: 150px;
+width: 150px;
+background-color: white;
+border: 3px solid black;
+border-radius: 10px;
+flex-direction: column;
+display: flex;
+align-items:center;
+justify-content: center;
+font-size: 25px;
+font-weight: 900;
+}
+.button_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+#b1{color: brown;}
+#b2{color:grey;}
+#b3{color:rgba(253, 4, 45, 0.804)}
+.buttons:active{
+background-color: antiquewhite;
+}
+#rock{height: 75px;
+width:75px;}
+#paper{height: 75px;
+width:75px;}
+#scissor{height: 75px;
+width:75px;}
+h1{color:orange;}
+#reset{width: 125px;
+height: 30px;
+background-color:rgba(128, 128, 128, 0.622);
+border:2px solid rgb(72, 7, 7);
+border-radius: 10px;
+}
+#user{color:purple;}
+#comp{color: palevioletred;}
+#score{color: rgb(245, 188, 2)}

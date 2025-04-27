@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>rock paper scissor game</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+<h1>Rock Paper and Scissor game!!!</h1>
+<div class="button_container">
+<button class="buttons" id="b1"onclick="
+let computerChoice=generate();
+var s=match('Rock',computerChoice);
+showresult('Rock',computerChoice,s);
+">
+    <img id="rock"src="images/rock.jpeg">Rock
+</button>
+<button  class="buttons" id="b2"
+onclick="
+ computerChoice=generate();
+s=match('Paper',computerChoice);
+showresult('Paper',computerChoice,s);">
+<img id="paper"src="images/paper.jpg">Paper</button>
+<button  class="buttons" id="b3">
+    <img id="scissor"src="images/scissor.jpg"
+    onclick="
+     computerChoice= generate();
+  s=match('Scissor',computerChoice);
+showresult('Scissor',computerChoice,s);">Scissor</button></div>
+<h1 id="user"></h1>
+<h2 id="comp"></h2>
+    <h2 id="result"></h2>
+    <h3 id="score"></h3>
+    <button id="reset" onclick="localStorage.clear();resetScore()">reset</button>
+    <script src="rps.js"></script>
+</body>
+</html>
